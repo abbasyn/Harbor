@@ -1,0 +1,156 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: 150px 67px 67px 75px;
+
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(14, 5vw);
+  gap: 1rem;
+  padding: 1.5rem;
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    &--1 {
+      grid-row: 1 / 1;
+      grid-column: 1 / -1;
+    }
+
+    &--2 {
+      grid-row: 2 / span 2;
+      grid-column: 1 / 2;
+    }
+
+    &--3 {
+      grid-row: 2 / span 1;
+      grid-column: 2 / 3;
+    }
+
+    &--4 {
+      grid-row: 3 / span 1;
+      grid-column: 2 / 3;
+    }
+
+    &--5 {
+      grid-row: 2 / -1;
+      grid-column: 3 / span 2;
+    }
+
+    &--6 {
+      grid-row: 4 / -1;
+      grid-column: 1 / span 2;
+    }
+  }
+
+  // &__item {
+  //   &--1 {
+  //     grid-row: 1 / span 5;
+  //     grid-column: 1 / -1;
+  //   }
+
+  //   &--2 {
+  //     grid-row: 6 / span 6;
+  //     grid-column: 1 / 2;
+  //   }
+
+  //   &--3 {
+  //     grid-row: 6 / span 3;
+  //     grid-column: 2 / 3;
+  //   }
+
+  //   &--4 {
+  //     grid-row: 9 / span 3;
+  //     grid-column: 2/ 3;
+  //   }
+  //   &--5 {
+  //     grid-row: 6 / -1;
+  //     grid-column: 3 / 5;
+  //   }
+
+  //   &--6 {
+  //     grid-row: 12 / -1;
+  //     grid-column: 1 / span 2;
+  //   }
+  // }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    // display: block;
+    // background-position: center;
+  }
+}
+
+.overlay::before {
+  display: table;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 21, 79, 0.7);
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 500ms;
+}
+.overlay::after {
+  display: table;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 21, 79, 0.7);
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 300ms;
+}
+
+.overlay {
+  position: relative;
+
+  &:hover::before {
+    transform: translateX(0%);
+  }
+
+  &:hover::after {
+    transform: translateX(0%);
+  }
+
+  p {
+    position: absolute;
+    font-size: 0.9rem;
+    display: block;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-weight: 600;
+    z-index: 50;
+    display: none;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    p {
+      display: inline-block;
+    }
+  }
+}
+
+// .text-hover-box {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: white;
+//   font-size: 20px;
+//   display: none;
+//   top: 0;
+// }
+.text-hover:hover {
+  //display: inline-block;
+}

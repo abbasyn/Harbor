@@ -1,0 +1,35 @@
+.receive-finance {
+  background-image: url(../img/solutions/section-bg.png);
+  padding-top: 10rem;
+  padding-bottom: 6.5rem;
+}
+
+.receive-finance-inner {
+  background-color: #fff;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 0 2rem;
+  padding: 4rem;
+  margin-top: 12.7rem;
+
+  p {
+    font-size: 13px;
+
+    @media only screen and (min-width: $bp-small) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.margin-t {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-margin-b {
+  //margin-bottom: 12rem;
+}

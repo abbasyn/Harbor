@@ -1,0 +1,108 @@
+.header-main {
+  background-image: linear-gradient(90deg, #00154f 0%, rgba(0, 21, 79, 0) 100%),
+    url(../img/home/bg.jpg);
+
+  //clip-path: circle(80.6% at 50% 29%);
+
+  background-size: cover;
+  background-position: 50%;
+  height: 63.3rem;
+  position: relative;
+}
+
+.clip-path-bottom {
+  width: 100%;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 112;
+
+  @media only screen and (min-width: $bp-small) {
+    //margin: 2rem 4rem 0 4rem;
+    margin-top: -10rem;
+  }
+
+  @media only screen and (min-width: $bp-medium) {
+    //margin: 2rem 4rem 0 4rem;
+    margin-top: -14rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    //margin: 2rem 4rem 0 4rem;
+    margin-top: -20rem;
+  }
+}
+
+.header {
+  //position: relative;
+}
+
+.logo-box {
+  position: relative;
+}
+
+.bg-ring {
+  //z-index: -1;
+  width: 25.6rem;
+  height: 25.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  z-index: 2;
+}
+
+.img-logo {
+  display: inline-block;
+  width: 12.7rem;
+  height: 2.9rem;
+
+  // margin: 3.5rem 0 0 1rem;
+}
+
+.hero-box {
+  //max-width: 35.5rem;
+  height: 6rem;
+  //position: absolute;
+  //top: 28.4rem;
+  // left: 2rem;
+  margin-top: 19rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+
+  @media only screen and (min-width: $bp-medium) {
+    max-width: 85%;
+    //margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media only screen and (min-width: $bp-large) {
+    max-width: 80rem;
+    //margin: auto;
+    margin-left: auto;
+    margin-top: 10rem;
+  }
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 3rem 2rem 0 3rem;
+  text-align: center;
+  color: #fff;
+
+  @media only screen and (min-width: $bp-small) {
+    //margin: 2rem 4rem 0 4rem;
+  }
+  @media only screen and (min-width: $bp-large) {
+    text-align: left;
+    margin: 3rem 2rem 0 0;
+    max-width: 40rem;
+  }
+}
+
+.contaniner-inner-header {
+  position: relative;
+}

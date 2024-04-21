@@ -1,0 +1,186 @@
+.go-trade {
+  margin-top: 7rem;
+  margin-bottom: 30rem;
+  position: relative;
+}
+
+.go-trade-main {
+  padding: 0 1rem;
+}
+
+.go-text-heading {
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: $bp-small) {
+    max-width: 35rem;
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 1.8rem;
+  }
+}
+
+.go-trade-bg-box {
+  position: relative;
+}
+
+.go-trade-bg {
+  width: 13rem;
+  height: 22.5rem;
+
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  //background-color: red;
+}
+
+.go-trade-inner-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.go-trade-inner {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.go-text {
+  font-size: 1.2rem;
+  max-width: 28rem;
+
+  @media only screen and (min-width: $bp-small) {
+    max-width: 35rem;
+    font-size: 1.4rem;
+  }
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 1.6rem;
+  }
+}
+
+.go-image {
+  max-width: 12rem;
+  border-radius: 3rem;
+  max-width: 12rem;
+
+  @media only screen and (min-width: $bp-small) {
+    max-width: 18rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    max-width: 30rem;
+  }
+}
+
+.started-list {
+  background-color: rgb(222, 228, 245);
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  @media only screen and (min-width: $bp-large) {
+    background-color: transparent;
+    padding: 0;
+    gap: 1rem;
+  }
+}
+
+.list-large-scr {
+  display: none;
+
+  @media only screen and (min-width: $bp-large) {
+    display: block;
+    display: flex;
+  }
+}
+
+.list-small-scr {
+  @media only screen and (min-width: $bp-large) {
+    display: none;
+  }
+}
+
+.started-list-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.list-text {
+  margin-left: 2rem;
+}
+
+.list-num {
+  border: 1px solid $color-primary-dark;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  padding: 2rem;
+
+  @media only screen and (min-width: $bp-large) {
+    background-color: rgb(222, 228, 245);
+    border: none;
+  }
+}
+
+.get-start-btn {
+  padding: 1.4rem;
+  width: 12rem;
+  background-color: rgb(39, 170, 225);
+  border: none;
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+
+  padding: 0.35rem;
+}
+
+.mail-adress {
+  width: 90%;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.btn-mail {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  width: 11.6rem;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  background-color: #ffffff66;
+  color: #fff;
+}
